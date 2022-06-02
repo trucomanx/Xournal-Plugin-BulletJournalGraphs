@@ -1,0 +1,10 @@
+Package: BulletJournalGraphs
+Priority: optional
+Section: misc
+Maintainer: Fernando Pujaico Rivera <fernando.pujaico.rivera@gmail.com>
+Architecture: all
+Version: 1.0
+Depends: 
+Description: Xournalpp plugin to add bullet journal graphics
+ This Xournalpp plugin add to menu a set of bullet journal graphics
+
