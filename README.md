@@ -17,7 +17,7 @@ To install the plugin follow any of these methods:
         cd makedeb
         ./makedeb.sh
 
-## Screenshot
+## Using
 
 ### Arrow bullet `<Ctrl><Alt>a` (by default)
 ![Arrow bullet](screenshot/screenshot1.png)
