@@ -29,7 +29,7 @@ If you wish, you can :
   * Modify the accelerator key.
 
 This can be made creating the `.BulletJournalGraphs.json` file in the `home` path. In Gnu-Linux operating system, the full path will be in: `/home/username/.BulletJournalGraphs.json`
-The next code is a example of `/home/username/.BulletJournalGraphs.json` file.
+The next code is an example of `/home/username/.BulletJournalGraphs.json` file.
 
     {
         "ArrowBullet":
