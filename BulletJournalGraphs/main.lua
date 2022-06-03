@@ -2,20 +2,34 @@
 
 require "ArrowBullet"
 require "TitleRound"
+require "GetInitData"
 
 
 -- Register all Toolbar actions and intialize all UI stuff
 function initUi()
+    data={
+        ArrowBullet={
+            menu="Add arrow bullet",
+            accelerator="<Control><Alt>a"
+        },
+        TitleRound={
+            menu="Add round box title",
+            accelerator="<Control><Alt>r"
+        },
+    };
+    
+    data=GetInitData(data);
+
     print("Registrando el pulgin BulletJournalGraphs ...\n");
 
-    ref = app.registerUi({  ["menu"] = "Add arrow bullet", 
+    ref = app.registerUi({  ["menu"] = data["ArrowBullet"]["menu"], 
                             ["callback"] = "ArrowBulletCallback", 
-                            ["accelerator"] = "<Control><Alt>a"}
+                            ["accelerator"] = data["ArrowBullet"]["accelerator"]}
                         );
 
-    ref = app.registerUi({  ["menu"] = "Add round box title", 
+    ref = app.registerUi({  ["menu"] = data["TitleRound"]["menu"], 
                             ["callback"] = "TitleRoundCallback", 
-                            ["accelerator"] = "<Control><Alt>r"}
+                            ["accelerator"] = data["TitleRound"]["accelerator"]}
                         );
 
     print("El plugin BulletJournalGraphs fue registrado.\n");

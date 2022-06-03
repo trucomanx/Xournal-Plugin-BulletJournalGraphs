@@ -19,5 +19,27 @@ To install the plugin follow any of these methods:
 
 ## Screenshot
 
-### Arrow bullet
+### Arrow bullet `<Ctrl><Alt>a` (by default)
 ![Arrow bullet](screenshot/screenshot1.png)
+
+## Optional
+If you wish, you can :
+
+  * Modify the text in the menu item.
+  * Modify the accelerator key.
+
+This can be made creating the `.BulletJournalGraphs.json` file in the `home` path. In Gnu-Linux operating system, the full path will be in: `/home/username/.BulletJournalGraphs.json`
+The next code is a example of `/home/username/.BulletJournalGraphs.json` file.
+
+    {
+        "ArrowBullet":
+        {
+            "accelerator":"<Control><Alt>a",
+            "menu":"Add arrow bullet"
+        },
+        "TitleRound":
+        {
+            "accelerator":"<Control><Alt>r",
+            "menu":"Add round box title"
+        }
+    }

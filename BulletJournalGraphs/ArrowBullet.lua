@@ -2,8 +2,12 @@
 function ArrowBulletCallback()
     --result = app.msgbox("Pregunta de tipo:", {[1] = "Yes", [2] = "No", [3]="Quien sabe"});
     --print("result = " .. result) -- print this text in console
+    
+    
+    -----------------------------------------------
 
     local docStructure = app.getDocumentStructure()
+    
     
     local width = docStructure["pages"][docStructure["currentPage"]]["pageWidth"];
     
