@@ -2,10 +2,10 @@
 
 mkdir -p deb
 mkdir -p ./deb/usr/share/xournalpp/plugins/
-cp -r BulletJournalGraphs ./deb/usr/share/xournalpp/plugins
+cp -r ../BulletJournalGraphs ./deb/usr/share/xournalpp/plugins
 
 mkdir ./deb/DEBIAN
-cp control ./deb/DEBIAN/control
+cp ../control ./deb/DEBIAN/control
 
 sudo chown -R root.root ./deb
 
