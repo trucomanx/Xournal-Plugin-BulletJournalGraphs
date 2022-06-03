@@ -18,9 +18,10 @@ function initUi()
         },
     };
     
-    data=GetInitData(data);
 
-    print("Registrando el pulgin BulletJournalGraphs ...\n");
+    print("\nRegistering the plugin BulletJournalGraphs ...");
+
+    data=GetInitData(data);
 
     ref = app.registerUi({  ["menu"] = data["ArrowBullet"]["menu"], 
                             ["callback"] = "ArrowBulletCallback", 
@@ -32,7 +33,7 @@ function initUi()
                             ["accelerator"] = data["TitleRound"]["accelerator"]}
                         );
 
-    print("El plugin BulletJournalGraphs fue registrado.\n");
+    print("The plugin BulletJournalGraphs was registered.\n");
 end
 
 

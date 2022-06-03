@@ -1,6 +1,10 @@
 function GetInitData(data)
     
     homepath = os.getenv( "HOME" );
+    if(homepath==nil) then
+        homepath = os.getenv( "HOMEDRIVE" );
+    end
+    
     filesep=package.config:sub(1,1);
     initfilepath=homepath..filesep..".BulletJournalGraphs.json"
     
@@ -28,9 +32,9 @@ function GetInitData(data)
                  data["TitleRound"]["accelerator"]=decode["TitleRound"]["accelerator"];
             end
         end
-        
+        print("Loaded json file:",initfilepath);
     else
-        print("NO exist:",initfilepath);
+        print("No exist optional init json file:",initfilepath);
     end
     
     return data;
