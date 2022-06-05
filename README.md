@@ -1,7 +1,7 @@
 # Xournal Plugin BulletJournalGraphs
 
 ## Introduction
-`Xournalpp` plugin to made bullet journal graphics.
+[Xournalpp](https://github.com/xournalpp/xournalpp) plugin to made bullet journal graphics.
 
   * **BulletJournalGraphs** The directory of plugin.
   * **makedeb** This directory contain the script to generate `xournalpp-plugin-bulletjournalgraphs.deb` binary file.
